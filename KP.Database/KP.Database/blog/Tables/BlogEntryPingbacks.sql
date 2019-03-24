@@ -5,6 +5,6 @@
     [Created]     DATETIME        NOT NULL,
     [Modified]    DATETIME        NULL,
     CONSTRAINT [PK_BlogEntryPingbacks] PRIMARY KEY CLUSTERED ([Id] ASC),
-    CONSTRAINT [FK_BlogEntryPingbacks_BlogEntries] FOREIGN KEY ([BlogEntryId]) REFERENCES [dbo].[BlogEntries] ([Id])
+    CONSTRAINT [FK_BlogEntryPingbacks_BlogEntries] FOREIGN KEY ([BlogEntryId]) REFERENCES [blog].[BlogEntries] ([Id])
 );
 
